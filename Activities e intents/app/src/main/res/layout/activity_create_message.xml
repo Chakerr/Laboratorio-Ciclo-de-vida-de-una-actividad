@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Lista de mensajes -->
+    <ListView
+        android:id="@+id/chat_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"/>
+
+    <!-- Campo de entrada de mensaje -->
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escribe un mensaje"
+        android:minHeight="48dp"
+        android:inputType="text"
+        android:padding="8dp"/>
+
+    <!-- Botón de envío -->
+    <Button
+        android:id="@+id/send_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enviar"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:padding="12dp"/>
+
+    <Button
+        android:id="@+id/delete_db_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eliminar mensajes"
+        android:background="?attr/selectableItemBackground"
+        android:textColor="@android:color/holo_red_dark"
+        android:gravity="center"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"/>
+
+
+</LinearLayout>
