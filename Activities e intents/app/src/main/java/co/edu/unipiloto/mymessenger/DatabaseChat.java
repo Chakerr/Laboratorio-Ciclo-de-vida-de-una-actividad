@@ -6,7 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import java.util.ArrayList;
-public class ChatDatabase extends SQLiteOpenHelper {
+public class DatabaseChat extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "chat.db";
     private static final int DATABASE_VERSION = 1;
 
@@ -17,7 +17,7 @@ public class ChatDatabase extends SQLiteOpenHelper {
     private static final String COLUMN_MESSAGE = "message";
     private static final String COLUMN_TIMESTAMP = "timestamp";
 
-    public ChatDatabase(Context context) {
+    public DatabaseChat(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 

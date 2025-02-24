@@ -13,14 +13,14 @@ public class RecieveMessageActivity extends Activity {
     private EditText messageView;
     private ArrayList<String> messages;
     private ArrayAdapter<String> adapter;
-    private ChatDatabase dbHelper;
+    private DatabaseChat dbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recieve_message);
 
-        dbHelper = new ChatDatabase(this);
+        dbHelper = new DatabaseChat(this);
         messageView = findViewById(R.id.message);
         Button sendButton = findViewById(R.id.send_button);
         ListView chatListView = findViewById(R.id.chat_list);
